@@ -1,0 +1,65 @@
+.btn {
+  position   : relative;
+  overflow   : hidden;
+  cursor     : pointer;
+  transition : transform .2s ease;
+
+  &:after {
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    bottom     : 0;
+    left       : 0;
+    content    : '';
+    transition : background .3s ease;
+    background : transparent;
+  }
+
+  &:hover:after {
+    background : rgba(0, 0, 0, 0.05);
+  }
+
+
+  &:active:after {
+    background : rgba(0, 0, 0, 0.15);
+  }
+
+  &:not(.small):active {
+    transform : scale(0.95);
+  }
+
+  // * DEFAULT
+  &:not(.big):not(.small) {
+    font-size     : 16px;
+    min-width     : 250px;
+    height        : 48px;
+    padding       : 0 24px;
+    border-radius : 8px;
+  }
+
+  // * BIG
+  &.big {
+    font-size     : 16px;
+    height        : 56px;
+    padding       : 0 28px;
+    border-radius : 8px;
+  }
+
+  // * SMALL
+  &.small {
+    font-size     : 14px;
+    padding       : 7px 15px;
+    border-radius : 4px;
+  }
+
+  // ! COLORS
+
+  &.red {
+    color            : white;
+    background-color : var(--logo_color);
+  }
+
+  &.secondary {
+    background-color : var(--btn_transp_color);
+  }
+}

@@ -1,0 +1,23 @@
+*, *:after, *:before {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration : none;
+  color           : inherit;
+}
+
+input, button, textarea {
+  font       : inherit;
+  color      : inherit;
+  border     : none;
+  outline    : none;
+  background : inherit;
+
+  & > option {
+    font   : 1em 'Arial', serif;
+    cursor : pointer;
+  }
+}

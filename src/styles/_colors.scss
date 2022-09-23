@@ -1,0 +1,45 @@
+body {
+  --intro_bg               : #D9F4FF;
+  --logo_color             : rgb(239, 49, 36);
+  --logo_color_transparent : rgba(239, 49, 36, 0.55);
+
+  --text_green             : #13A463;
+
+  --text_gray              : #546272;
+  --text_dark              : #0B1F35;
+
+  --btn_transp_color       : rgba(11, 31, 53, .07);
+  --gray_box               : #F5F7F9;
+  --interface_color_1      : #3E4C5C;
+
+  --input_bg_color         : #E5E9ED;
+  --input_bg_active_color  : #D3D8DE;
+
+  --calc_grad              : linear-gradient(267.22deg, #EBEEF1 50%, #F6F8FB 60.35%);
+
+  --small_shadow           : 0 24px 96px rgba(35, 38, 40, .08);
+}
+
+// * BACKGROUND
+
+.bg--intro_bg {
+  background-color : var(--intro_bg);
+}
+
+.bg--gray_box {
+  background-color : var(--gray_box);
+}
+
+.bg--calc_grad {
+  background : var(--calc_grad);
+}
+
+// * FONT COLOR
+
+.fc-gray {
+  color : var(--text_gray);
+}
+
+.fc-green {
+  color : var(--text_green);
+}
