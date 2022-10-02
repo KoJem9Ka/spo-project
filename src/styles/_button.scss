@@ -1,18 +1,20 @@
 .btn {
-  position   : relative;
-  overflow   : hidden;
-  cursor     : pointer;
-  transition : transform .2s ease;
+  @apply relative overflow-hidden cursor-pointer duration-200;
+  //position   : relative;
+  //overflow   : hidden;
+  //cursor     : pointer;
+  //transition : transform .2s ease;
 
   &:after {
-    position   : absolute;
-    top        : 0;
-    right      : 0;
-    bottom     : 0;
-    left       : 0;
-    content    : '';
-    transition : background .3s ease;
-    background : transparent;
+    @apply absolute inset-0 bg-transparent duration-300 content-[''];
+    //position   : absolute;
+    //top        : 0;
+    //right      : 0;
+    //bottom     : 0;
+    //left       : 0;
+    //content    : '';
+    //transition : background .3s ease;
+    //background : transparent;
   }
 
   &:hover:after {
@@ -52,14 +54,28 @@
     border-radius : 4px;
   }
 
-  // ! COLORS
+  //! COLORS
 
   &.red {
-    color            : white;
-    background-color : var(--logo_color);
+    @apply text-white bg-red;
+    //color            : white;
+    //background-color : var(--logo_color);
   }
 
   &.secondary {
-    background-color : var(--btn_transp_color);
+    @apply bg-secondary;
+    //background-color : var(--btn_transp_color);
+  }
+}
+
+.radioBtn {
+  @apply
+  bg-btnRadio hover:bg-btnRadioHover text-gentianBlue
+  rounded-full
+  pt-7 pb-8 px-16
+  active:bg-btnRadioActive;
+
+  &.active {
+    @apply bg-gentianBlue text-white;
   }
 }

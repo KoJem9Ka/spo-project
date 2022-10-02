@@ -1,159 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import 'reset';
-//@import "~bootstrap/scss/bootstrap";
-@import 'colors';
-@import 'fonts/openSansFont';
 @import 'input_range';
-@import 'fonts';
 @import 'button';
 
-body {
-  font-family : 'Open Sans', sans-serif;
-  font-size   : 16px;
+* {
+  font-family : -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Ubuntu, Cantarell, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  box-sizing  : border-box;
 }
 
 h1 {
-  font-size   : 40px;
-  font-weight : 600;
+  @apply text-40 font-semibold leading-1.2;
 }
 
 h2 {
-  font-size   : 30px;
-  font-weight : 600;
-  text-align  : center;
+  @apply text-30 font-bold leading-1.2;
 }
 
-hr {
-  border        : none;
-  border-bottom : 1px solid rgba(0, 0, 0, .1);
+.calcArrow {
+  position : relative;
+
+  &:after {
+    position      : absolute;
+    top           : 50%;
+    left          : 0;
+    display       : block;
+    width         : 0;
+    height        : 0;
+    content       : '';
+    transform     : translateY(-50%);
+    border-top    : 16px solid transparent;
+    border-bottom : 16px solid transparent;
+    border-left   : 16px solid #E3E6E9;
+  }
 }
-
-// * CONTAINER
-
-.container {
-  padding-right : calc((100% - 1200px) / 2);
-  padding-left  : calc((100% - 1200px) / 2);
-}
-
-// * FLEX
-
-.flex-row {
-  display : flex;
-}
-
-.flex-col {
-  display        : flex;
-  flex-direction : column;
-}
-
-.flex-jc-ai-center {
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
-}
-
-.jc-sb {
-  justify-content : space-between;
-}
-
-.shrink-0 {
-  flex-shrink : 0;
-}
-
-// * GRID
-
-.grid-4-1fr {
-  display               : grid;
-  grid-template-columns : repeat(4, 1fr);
-}
-
-.grid-2-1fr {
-  display               : grid;
-  grid-template-columns : repeat(2, 1fr);
-}
-
-// ! MARGINS VERTICAL
-.mv-10 {
-  margin-top    : 10px;
-  margin-bottom : 10px;
-}
-
-.mv-16 {
-  margin-top    : 16px;
-  margin-bottom : 16px;
-}
-
-// ! MARGINS TOP
-.mt-30 {
-  margin-top : 30px;
-}
-
-.mt-48 {
-  margin-top : 48px;
-}
-
-.mt-108 {
-  margin-top : 108px;
-}
-
-// ! MARGINS BOTTOM
-.mb-32 {
-  margin-bottom : 32px;
-}
-
-.mb-65 {
-  margin-bottom : 65px;
-}
-
-.mb-24 {
-  margin-bottom : 24px;
-}
-
-// * PADDINGS
-
-.p-48 {
-  padding : 48px;
-}
-
-// * PADDINGS VERTICAL
-.pv-48 {
-  padding-top    : 48px;
-  padding-bottom : 48px;
-}
-
-// * BORDER
-.brad-8 {
-  border-radius : 8px;
-}
-
-// * WIDTH HEIGHT SIZES
-
-.square-58 {
-  width  : 58px;
-  height : 58px;
-}
-
-// * OTHER
-
-.no_click {
-  user-select    : none;
-  pointer-events : none;
-}
-
-.bb-dashed {
-  border-bottom : 1px dashed var(--text_gray);
-}
-
-.c-pointer {
-  cursor : pointer;
-}
-
-/*
-12px
-13px div
-14px a
-16px a div
-18px
-22px span
-30px h2
-40px h1
-*/

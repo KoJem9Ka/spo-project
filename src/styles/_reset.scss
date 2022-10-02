@@ -13,11 +13,18 @@ input, button, textarea {
   font       : inherit;
   color      : inherit;
   border     : none;
-  outline    : none;
+  outline    : none !important;
   background : inherit;
 
   & > option {
     font   : 1em 'Arial', serif;
     cursor : pointer;
   }
+}
+
+hr {
+  border-top    : 0;
+  border-right  : 0;
+  border-bottom : 0;
+  border-left   : 0;
 }

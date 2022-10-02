@@ -1,5 +1,5 @@
 # 👨‍🎓 System Software Basics Frontend Project
-Alfabank website page makeup project for the university's system software basics course, variant №2. 
+Alfabank website page makeup project for the university's system software basics course, variant №2.
 
 You can look at
 [Original Website](https://alfabank.ru/everyday/debit-cards/alfacard/)
@@ -10,7 +10,7 @@ on GitHub pages.
 ## Technology Stack
 * [TypeScript](https://www.typescriptlang.org/)
 * [React](https://reactjs.org/)
-* [Styled Components](https://styled-components.com/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 ### Development
 1. `npm install`

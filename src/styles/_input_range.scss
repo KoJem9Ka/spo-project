@@ -8,20 +8,22 @@ input[type=range]:focus {
 }
 
 input[type=range]::-moz-range-track {
-  width      : 100%;
-  height     : 2px;
-  cursor     : grab;
-  background : var(--logo_color);
+  width  : 100%;
+  height : 2px;
+  cursor : grab;
+  //background : var(--logo_color);
+  @apply bg-red;
 }
 
 input[type=range]::-moz-range-thumb {
-  width         : 20px;
-  height        : 20px;
-  cursor        : grab;
-  border        : 0px solid #000;
-  border-radius : 1000px;
-  background    : var(--logo_color);
-  box-shadow    : 0 0 10px var(--logo_color_transparent);
+  @apply
+  bg-red
+  w-20
+  h-20
+  cursor-grab
+  rounded-full;
+  border     : none;
+  box-shadow : 0 0 10px rgba(239, 49, 36, 0.55);
 
   &:active {
     cursor : grabbing;
