@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/spo-project/static/css/main.7e118965.css",
-    "main.js": "/spo-project/static/js/main.3becb05b.js",
+    "main.css": "/spo-project/static/css/main.154f98ab.css",
+    "main.js": "/spo-project/static/js/main.f001969b.js",
     "static/media/card_and_loupe.png": "/spo-project/static/media/card_and_loupe.e4dc3872f928af7f1d34.png",
     "static/media/to9PercentPerYear.png": "/spo-project/static/media/to9PercentPerYear.0133f6bca236c5a06c5f.png",
     "index.html": "/spo-project/index.html",
-    "main.7e118965.css.map": "/spo-project/static/css/main.7e118965.css.map",
-    "main.3becb05b.js.map": "/spo-project/static/js/main.3becb05b.js.map"
+    "main.154f98ab.css.map": "/spo-project/static/css/main.154f98ab.css.map",
+    "main.f001969b.js.map": "/spo-project/static/js/main.f001969b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e118965.css",
-    "static/js/main.3becb05b.js"
+    "static/css/main.154f98ab.css",
+    "static/js/main.f001969b.js"
   ]
 }
