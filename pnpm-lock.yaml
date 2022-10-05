@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@formkit/auto-animate': 1.0.0-beta.3
   '@types/inputmask': ^5.0.3
   '@types/lodash': ^4.14.186
   '@types/node': ^18.7.23
@@ -20,6 +21,7 @@ specifiers:
   typescript: ^4.8.4
 
 dependencies:
+  '@formkit/auto-animate': 1.0.0-beta.3
   dayjs: 1.11.5
   inputmask: 5.0.7
   lodash: 4.17.21
@@ -1599,6 +1601,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@formkit/auto-animate/1.0.0-beta.3:
+    resolution: {integrity: sha512-glsi+ytwQpxT/Ctr9GtcIfVr4dO6mJ04mQbNU8MFSdCdqMopHtyfU5Fib0+9lNFIeR0luY4/0NW95/2R5pKsag==}
     dev: false
 
   /@gar/promisify/1.1.3:

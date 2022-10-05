@@ -1,5 +1,4 @@
 import React, {
-  ChangeEventHandler,
   FC,
   useState,
 }                         from 'react'

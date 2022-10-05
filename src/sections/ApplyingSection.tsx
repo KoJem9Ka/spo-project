@@ -34,9 +34,7 @@ let setFormState: TSetStateFn
 
 export type TFormUpdateFn = ( value: AtLeastOne<DeepPartial<typeof initialState>> ) => void
 export const formChange: TFormUpdateFn = ( newPartialState ) => setFormState( state => {
-  newPartialState.noPatronymic
-  ? (newPartialState.patronymic = '-')
-  : state.patronymic === '-' && (newPartialState.patronymic = '')
+  newPartialState.noPatronymic ? (newPartialState.patronymic = '-') : state.patronymic === '-' && (newPartialState.patronymic = '')
   return ({ ...state, ...newPartialState })
 } )
 
@@ -55,8 +53,8 @@ const ApplyingSection: FC = () => {
           <button className='btn red'>Продолжить</button>
         </div>
         <p className='text-16 text-gentianBlue'>
-          Нажимая «Продолжить», я соглашаюсь с <a className={styles.link}>условиями</a>, <a className={styles.link}>договором</a>, даю <a
-          className={styles.link}>согласие</a>, разрешаю сделать запрос в бюро кредитных историй и даю <a className={styles.link}>согласие</a> оператору,
+          Нажимая «Продолжить», я соглашаюсь с <a className={styles.link} href='/'>условиями</a>, <a className={styles.link} href='/'>договором</a>, даю <a
+          className={styles.link} href='/'>согласие</a>, разрешаю сделать запрос в бюро кредитных историй и даю <a className={styles.link} href='/'>согласие</a> оператору,
           абонентом которого я являюсь.
         </p>
         <div className='flex gap-12 items-center text-16 text-black'>

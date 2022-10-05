@@ -1,3 +1,11 @@
 .link {
   @apply cursor-pointer border-b-1 border-lamantine hover:border-purpleBlue;
 }
+
+.headLink {
+  @apply text-gentianBlue/50 hover:text-gentianBlue;
+}
+
+.headLink2 {
+  @apply text-gentianBlue hover:text-gentianBlue/50 duration-200;
+}

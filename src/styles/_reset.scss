@@ -12,7 +12,7 @@ a, a:visited, a:hover, a:active {
 input, button, textarea {
   font       : inherit;
   color      : inherit;
-  border     : none;
+  border     : 0 solid black;
   outline    : none !important;
   background : inherit;
 

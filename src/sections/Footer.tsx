@@ -22,7 +22,7 @@ const Footer: FC = () => (
       <div className='flex gap-16 shrink-0 text-14'>
         <IconAlfabankLogo2/>
         <div>
-          <a className='border-b-1 border-white/50 hover:border-white cursor-pointer'>Мобильный банк</a>
+          <a className='border-b-1 border-white/50 hover:border-white cursor-pointer' href='/'>Мобильный банк</a>
           <p>Приложение для айфона и андроида</p>
         </div>
       </div>

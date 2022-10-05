@@ -1,6 +1,5 @@
 import React, { FC }     from 'react'
-import IconChevronRight  from '../assets/icons/IconChevronRight'
-import IconChevronLeft   from '../assets/icons/IconChevronLeft'
+import IconChevron       from '../assets/icons/IconChevron'
 import cardAndLoupe      from '../assets/card_and_loupe.png'
 import { useMatchMedia } from '../hooks/useMatchMedia'
 import { join }          from '../utils'
@@ -16,7 +15,7 @@ const MainSection: FC = () => {
       <div className='flex flex-col justify-between pb-66'>
         <div className='flex gap-10 items-center'>
           <a href='/' className={join( styles.link, 'text-14' )}>Частным лицам</a>
-          <IconChevronRight className='w-6'/>
+          <IconChevron dir='right' className='w-6'/>
           <a href='/' className={join( styles.link, 'text-14' )}>Дебетовые карты</a>
         </div>
         <div>
@@ -26,7 +25,7 @@ const MainSection: FC = () => {
         <div className='flex gap-12 items-center'>
           <button className='btn big secondary shrink-0'>Подробнее</button>
           <button className='btn big red whitespace-nowrap shrink-0'>Заказать карту</button>
-          <IconChevronLeft/>
+          <IconChevron dir='left'/>
           <span className='text-13'>Закажите сейчас – бесплатно доставим завтра</span>
         </div>
       </div>
