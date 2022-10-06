@@ -5,19 +5,19 @@ module.exports = {
   ],
   theme:   {
     screens:            {
-      'mob': '640px',
-      'tab': '1024px',
-      'pc':  '1140px',
+      'mob': { min: '600px', raw: '(max-width: 1139px)' },
+      'pc':  { min: '1140px', raw: '(min-width: 1140px)' },
     },
     fontSize:           {
-      12: '12px',
-      13: '13px',
-      14: '14px',
-      16: '16px',
-      18: '18px',
-      22: '22px',
-      30: '30px',
-      40: '40px',
+      'inherit': 'inherit',
+      12:        '12px',
+      13:        '13px',
+      14:        '14px',
+      16:        '16px',
+      18:        '18px',
+      22:        '22px',
+      30:        '30px',
+      40:        '40px',
     },
     borderWidth:        {
       0: 'none',
@@ -60,6 +60,7 @@ module.exports = {
       36:    '36px',
       40:    '40px',
       48:    '48px',
+      56:    '56px',
       66:    '66px',
       76:    '76px',
       96:    '96px',
@@ -112,20 +113,30 @@ module.exports = {
       white:                      'white',
       black:                      'black',
       transportOrangeTransparent: 'rgba(239, 49, 36, 0.55)',
-      red:                        'rgb(239, 49, 36)',
-      secondary:                  'rgba(11, 31, 53, .07)',
+      red:                        {
+        DEFAULT: 'rgb(239, 49, 36)',
+
+      },
     },
     boxShadow:          {
       formShadow: '0 6px 14px rgba(11,31,53,.15)',
       calcShadow: '0 24px 96px rgba(35,38,40,.08)',
     },
     backgroundImage:    {
-      calcGrad:          'linear-gradient(267.22deg, #ebeef1 50%, #f6f8fb 60.35%)',
-      to9PercentPerYear: 'url(../assets/to9PercentPerYear.png)',
+      calcGrad:               'linear-gradient(267.22deg, #ebeef1 50%, #f6f8fb 60.35%)',
+      benefitsImage:          'url(../assets/benefitsImage.png)',
+      mainMobileDeliveryGrad: 'linear-gradient(90deg, rgb(255, 249, 227) 0%, rgb(255, 233, 227) 100%)',
     },
     extend:             {
       gridTemplateColumns: {
         list: 'auto 1fr',
+      },
+      minWidth:            {
+        250: '250px',
+      },
+      opacity:             {
+        7:  '.07',
+        15: '.15',
       },
     },
   },

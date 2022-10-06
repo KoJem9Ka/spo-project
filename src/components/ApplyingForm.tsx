@@ -90,7 +90,7 @@ const ApplyingForm: FC<TFromState> = ( {
                    value={birthday}
                    handler={onInputChangeByInputNameHandler}
         />
-        <div className='grid grid-cols-2 gap-25'>
+        <div className='pc:grid mob:flex flex-col grid-cols-2 gap-25'>
           <FormField type='phone'
                      required
                      placeholder='Мобильный телефон'
@@ -118,5 +118,5 @@ const closestOffice: JSX.Element = <>
   <p className='text-16 text-black'>
     Для оформления заявки на получение карты, пожалуйста, обратитесь в ближайшее отделение Альфа-Банка.
   </p>
-  <button className='btn red'>Найти ближайшее отделение</button>
+  <button className='btn btn-red'>Найти ближайшее отделение</button>
 </>

@@ -24,14 +24,14 @@ const CalculatorSection: FC = () => {
     setRawExpenses( nextValue )
   }
 
-  return <div className='container'>
-    <h2 className='text-center mb-24'>Рассчитайте кэшбэк по Альфа-Карте</h2>
-    <div className='block grid grid-cols-2 text-marengo bg-calcGrad'>
-      <div className='p-48 pb-40 flex flex-col justify-between'>
+  return <div className='container mt-48 mob:mt-22'>
+    <h2 className='text-center mb-28 mob:px-15'>Рассчитайте кэшбэк по Альфа-Карте</h2>
+    <div className='block pc:grid grid-cols-2 text-marengo pc:bg-calcGrad mob:bg-formField'>
+      <div className='p-48 pb-40 mob:p-20 flex flex-col justify-between'>
         <ExpensesCalculator expenses={expenses} setExpenses={setExpenses}/>
         Расчёт калькулятора предварительный и не является публичной офертой
       </div>
-      <div className='calcArrow bg-white px-48 py-40 shadow-calcShadow'>
+      <div className='calcArrow bg-white px-48 py-40 mob:p-20 mob:pb-0 pc:shadow-calcShadow'>
         <p className='text-black font-semibold text-22 mb-32'>Вы получите:</p>
         <div className='flex justify-between items-center'>
           <span>Кэшбэк в месяц<br/>% кэшбэка по акции — 10%</span>
@@ -56,7 +56,7 @@ const CalculatorSection: FC = () => {
              : '2%'}
           </span>
         </div>
-        <button className='btn red'>Заказать карту</button>
+        <a className='btn btn-red mt-16 mob:w-full' href='#form'>Заказать карту</a>
       </div>
     </div>
   </div>

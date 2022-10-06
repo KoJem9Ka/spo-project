@@ -5,8 +5,8 @@ import IconAlfabankLogo2 from '../assets/icons/IconAlfabankLogo2'
 
 const Footer: FC = () => (
   <div className='bg-black text-12 pt-32 pb-48 text-white'>
-    <div className='container flex gap-24'>
-      <div className='flex flex-col gap-12'>
+    <div className='container px-15 flex mob:flex-col gap-24'>
+      <div className='flex flex-col gap-12 text-justify'>
         <p>© 2001-2022. АО «Альфа-Банк», официальный сайт. Генеральная лицензия Банка России № 1326 от 16 января 2015 г. АО «Альфа-Банк» является участником
           системы
           обязательного страхования вкладов. Информация о процентных ставках по договорам банковского вклада с физическими лицами. Центр раскрытия корпоративной
@@ -19,7 +19,7 @@ const Footer: FC = () => (
         <p>АО «Альфа-Банк» использует файлы «cookie» с целью персонализации сервисов и повышения удобства пользования веб-сайтом. Если вы не хотите, чтобы ваши
           пользовательские данные обрабатывались, пожалуйста, ограничьте их использование в своём браузере.</p>
       </div>
-      <div className='flex gap-16 shrink-0 text-14'>
+      <div className='flex gap-16 shrink-0 text-14 mob:-order-1'>
         <IconAlfabankLogo2/>
         <div>
           <a className='border-b-1 border-white/50 hover:border-white cursor-pointer' href='/'>Мобильный банк</a>

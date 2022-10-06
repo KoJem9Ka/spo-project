@@ -1,0 +1,46 @@
+%BtnBase {
+  @apply inline-flex text-center justify-center items-center;
+
+  @apply relative overflow-hidden cursor-pointer duration-200;
+
+  @apply rounded-8 active:scale-95;
+
+  @apply hover:after:bg-black/5;
+  @apply active:after:bg-black/15;
+
+  &:after { @apply content-[''] absolute inset-0 bg-transparent duration-300; }
+}
+
+.btn {
+  @extend %BtnBase;
+  @apply text-16 min-w-250 h-48 px-24;
+
+  &-big {
+    @extend %BtnBase;
+    @apply text-16 h-56 px-28;
+  }
+
+  &-small {
+    @extend %BtnBase;
+    @apply text-14 py-7 px-15 rounded-4 active:scale-100;
+  }
+
+  &-red {
+    @apply text-white bg-red;
+  }
+
+  &-transp {
+    @apply bg-gentianBlue/7;
+  }
+}
+
+.radioBtn {
+  @apply bg-btnRadio hover:bg-btnRadioHover text-gentianBlue;
+  @apply rounded-full;
+  @apply pt-7 pb-8 px-16;
+  @apply active:bg-btnRadioActive;
+
+  &.active {
+    @apply bg-gentianBlue text-white;
+  }
+}
