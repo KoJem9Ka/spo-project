@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/spo-project/static/css/main.154f98ab.css",
-    "main.js": "/spo-project/static/js/main.f001969b.js",
+    "main.css": "/spo-project/static/css/main.c642ea37.css",
+    "main.js": "/spo-project/static/js/main.ee50a2ff.js",
     "static/media/card_and_loupe.png": "/spo-project/static/media/card_and_loupe.e4dc3872f928af7f1d34.png",
-    "static/media/to9PercentPerYear.png": "/spo-project/static/media/to9PercentPerYear.0133f6bca236c5a06c5f.png",
+    "static/media/benefitsImage.png": "/spo-project/static/media/benefitsImage.0133f6bca236c5a06c5f.png",
+    "static/media/card_and_loupe_mobile.png": "/spo-project/static/media/card_and_loupe_mobile.389ad3e84e8e46d4841e.png",
+    "static/media/benefits_mobile.png": "/spo-project/static/media/benefits_mobile.dcec0b4699f2fa4a2d1c.png",
     "index.html": "/spo-project/index.html",
-    "main.154f98ab.css.map": "/spo-project/static/css/main.154f98ab.css.map",
-    "main.f001969b.js.map": "/spo-project/static/js/main.f001969b.js.map"
+    "main.c642ea37.css.map": "/spo-project/static/css/main.c642ea37.css.map",
+    "main.ee50a2ff.js.map": "/spo-project/static/js/main.ee50a2ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.154f98ab.css",
-    "static/js/main.f001969b.js"
+    "static/css/main.c642ea37.css",
+    "static/js/main.ee50a2ff.js"
   ]
 }
